@@ -14,6 +14,42 @@
         <style>
         html, body {
             background-color: #ffffff;
+            margin: 0%;
+        padding: 0;
+      }
+
+      #navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #ffffff;
+        padding: 5px 20px;
+        position: absolute;
+        top: 0;
+        width: 80%;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 1000;
+        font-family: "helvetica", serif;
+        border-radius: 15px;
+      }
+
+      #navbar .logo {
+        display: flex;
+        align-items: center;
+      }
+
+      #navbar .logo img {
+        height: 40px; /* Ukuran logo */
+        margin-right: 10px;
+      }
+
+      #navbar .title {
+        color: rgb(47, 47, 47);
+        font-size: 17px; /* Ukuran Font Navbar */
+        font-weight: bold;
+        text-align: center;
+        flex-grow: 1;
         }
         .ol-control > * {
             background-color: #f8f8f8!important;
@@ -46,6 +82,16 @@
         <title></title>
     </head>
     <body>
+        <!-- Navbar dengan logo di kiri atas dan nama perusahaan di tengah -->
+    <div id="navbar">
+      <!-- Logo di kiri -->
+      <div class="logo">
+        <img src="images/trigada_1.png" alt="PT. Trigada Laroiba Mitra" />
+      </div>
+
+      <!-- Nama perusahaan di tengah -->
+      <div class="title">Peta Pengalaman Kerja PT. Trigada Laroiba Mitra</div>
+    </div>
         <div id="map">
             <div id="popup" class="ol-popup">
                 <a href="#" id="popup-closer" class="ol-popup-closer"></a>
